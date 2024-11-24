@@ -28,15 +28,7 @@ for (let i = 0; i < ROWS; i++) {
 			});
 
 		// const index = i * n + j;
-		div.classList.add(
-			`row-${i}`,
-			`col-${j}`,
-			"top",
-			"bottom",
-			"left",
-			"right",
-			"box"
-		);
+		div.classList.add(`row-${i}`, `col-${j}`, "box");
 		if (grid[i][j] === 1) {
 			div.textContent = "S";
 			div.classList.add("source");
