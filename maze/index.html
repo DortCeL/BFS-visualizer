@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+			body {
+				background: #7c6f6f;
+			}
+
+			#container {
+				gap: 0px;
+				width: fit-content;
+				border-radius: 10px;
+			}
+
+			.box {
+				width: 50px;
+				height: 50px;
+				background: linear-gradient(rgb(92, 185, 107), green);
+
+				border-radius: 10px;
+				border: 2px solid black;
+
+				cursor: pointer;
+				font-weight: bold;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-size: 20px;
+			}
+
+			.source {
+				background: orange;
+			}
+
+			.target {
+				background: magenta;
+			}
+
+			.isWall {
+				background: #9e0707;
+			}
+
+			.path {
+				background: white;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container"></div>
+		<button id="run-bfs">RUN BFS</button>
+		<script src="script.js"></script>
+	</body>
+</html>
