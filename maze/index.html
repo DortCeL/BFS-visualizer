@@ -24,7 +24,7 @@
 				height: 50px;
 				background: linear-gradient(rgb(92, 185, 107), green);
 
-				border-radius: 10px;
+				border-radius: 40%;
 				border: 2px solid black;
 
 				cursor: pointer;
@@ -47,6 +47,10 @@
 				background: #9e0707;
 			}
 
+			.isVisited {
+				background: rgb(230, 223, 125);
+			}
+
 			.path {
 				background: white;
 			}
@@ -55,6 +59,7 @@
 	<body>
 		<div id="container"></div>
 		<button id="run-bfs">RUN BFS</button>
+		<button id="reset-path">Reset Path</button>
 		<script src="script.js"></script>
 	</body>
 </html>
