@@ -8,12 +8,28 @@
 	</head>
 	<body>
 		<div class="navbar">
-			<input id="row-input" type="number" value="6" placeholder="Rows" />
-			<input id="col-input" type="number" value="10" placeholder="Columns" />
-			<button id="create-grid-btn">Create</button>
-			<button id="run-bfs-btn">Run BFS</button>
-			<button id="reset-path-btn">Reset Path</button>
-			<button id="reset-everything-btn">Reset Everything</button>
+			<div class="nav-layer-1">
+				<div class="input-holder">
+					<label for="row-input">Number of rows</label>
+					<input id="row-input" type="number" value="10" placeholder="Rows" />
+				</div>
+				<div class="input-holder">
+					<label for="col-input">Number of columns</label>
+					<input
+						id="col-input"
+						type="number"
+						value="30"
+						placeholder="Columns"
+					/>
+				</div>
+			</div>
+
+			<div class="nav-layer-2">
+				<button id="create-grid-btn">Create</button>
+				<button id="run-bfs-btn">Run BFS</button>
+				<button id="reset-path-btn">Reset Path</button>
+				<button id="reset-everything-btn">Reset Everything</button>
+			</div>
 		</div>
 		<p id="error-msg"></p>
 		<div id="container"></div>
