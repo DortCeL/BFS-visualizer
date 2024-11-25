@@ -96,7 +96,7 @@ input {
 
 	cursor: pointer;
 
-	background-color: rgb(241, 237, 243);
+	background: linear-gradient(rgb(82, 85, 219), rgb(114, 126, 228));
 	color: black;
 
 	display: flex;
@@ -110,22 +110,22 @@ input {
 }
 
 .isSource {
-	background: rgb(55, 204, 18);
-	color: rgb(30, 33, 77);
+	background: linear-gradient(rgb(55, 204, 18), rgb(56, 170, 27));
+	color: black;
 }
 .isTarget {
-	background: rgb(51, 49, 49);
-	color: white;
+	background: linear-gradient(rgb(59, 201, 24), rgb(95, 209, 67));
+	color: black;
 }
 
 .isWall {
-	background: red;
+	background: linear-gradient(rgb(141, 3, 3), rgb(185, 2, 2));
 }
 
 .isVisited {
-	background: grey;
+	background: linear-gradient(grey, rgb(71, 71, 71));
 }
 
 .isPath {
-	background: rgb(239, 237, 237);
+	background: white;
 }
