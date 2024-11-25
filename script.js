@@ -184,7 +184,9 @@ run_bfs_btn.addEventListener("click", () => {
 					else if (grid[i][j] === 3) steps_taken++;
 				}
 			}
-			error_msg.textContent = `Target found after visiting ${steps_taken} cells, shortest path length is ${path_length}`;
+			error_msg.textContent = `Target found after visiting ${
+				steps_taken + path_length
+			} out of ${ROW * COL - 2} cells, shortest path length is ${path_length}`;
 			reset_required = true;
 		} else {
 			// path not found

@@ -1,0 +1,49 @@
+#container {
+	display: grid;
+	width: fit-content;
+}
+
+#error-msg {
+	font-size: 16px;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+	color: black;
+	font-weight: bold;
+	text-align: center;
+	width: fit-content;
+	border-radius: 10px;
+
+	display: block;
+}
+
+.cell {
+	width: 50px;
+	height: 50px;
+	border: 1px solid black;
+	background: purple;
+	color: white;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-weight: bold;
+}
+
+.isSource {
+	background: rgb(186, 179, 232);
+}
+.isTarget {
+	background: rgb(120, 237, 84);
+}
+
+.isWall {
+	background: red;
+}
+
+.isVisited {
+	background: grey;
+}
+
+.isPath {
+	background: rgb(239, 237, 237);
+}
