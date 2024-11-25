@@ -148,6 +148,10 @@ function bfs() {
 }
 
 run_bfs_btn.addEventListener("click", () => {
+	if (reset_required) {
+		error_msg.textContent = "Open your eyes... Shortest path is already there!";
+		return;
+	}
 	if (!grid_exists) {
 		error_msg.textContent = "No grid found";
 	} else if (click_counter < 2) {
