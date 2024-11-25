@@ -3,67 +3,18 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Grid Generator</title>
-
-		<style>
-			#container {
-				display: grid;
-				width: fit-content;
-			}
-
-			#error-msg {
-				font-size: 16px;
-				text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-				color: black;
-				font-weight: bold;
-				text-align: center;
-				width: fit-content;
-				border-radius: 10px;
-
-				display: block;
-			}
-
-			.cell {
-				width: 50px;
-				height: 50px;
-				border: 1px solid black;
-				background: purple;
-				color: white;
-
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				color: white;
-				font-weight: bold;
-			}
-
-			.isSource {
-				background: rgb(186, 179, 232);
-			}
-			.isTarget {
-				background: rgb(120, 237, 84);
-			}
-
-			.isWall {
-				background: red;
-			}
-
-			.isVisited {
-				background: grey;
-			}
-
-			.isPath {
-				background: rgb(239, 237, 237);
-			}
-		</style>
+		<title>Breadth First Search (BFS)</title>
+		<link rel="stylesheet" href="styles.css" />
 	</head>
 	<body>
-		<input id="row-input" type="number" value="6" placeholder="Rows" />
-		<input id="col-input" type="number" value="10" placeholder="Columns" />
-		<button id="create-grid-btn">Create</button>
-		<button id="run-bfs-btn">Run BFS</button>
-		<button id="reset-path-btn">Reset Path</button>
-		<button id="reset-everything-btn">Reset Everything</button>
+		<div class="navbar">
+			<input id="row-input" type="number" value="6" placeholder="Rows" />
+			<input id="col-input" type="number" value="10" placeholder="Columns" />
+			<button id="create-grid-btn">Create</button>
+			<button id="run-bfs-btn">Run BFS</button>
+			<button id="reset-path-btn">Reset Path</button>
+			<button id="reset-everything-btn">Reset Everything</button>
+		</div>
 		<p id="error-msg"></p>
 		<div id="container"></div>
 		<script src="script.js"></script>
