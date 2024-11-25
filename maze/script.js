@@ -148,6 +148,7 @@ startbtn.addEventListener("click", () => {
 	}
 });
 
+// RESET DOESNT WORK
 const resetPathBtn = document.getElementById("reset-path");
 resetPathBtn.addEventListener("click", () => {
 	boxes.forEach((box) => {
