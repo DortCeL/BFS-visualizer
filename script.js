@@ -149,9 +149,10 @@ function bfs() {
 
 run_bfs_btn.addEventListener("click", () => {
 	if (reset_required) {
-		error_msg.textContent = "Open your eyes... Shortest path is already there!";
+		error_msg.textContent = "OPEN YOUR EYES! result is already shown!";
 		return;
 	}
+
 	if (!grid_exists) {
 		error_msg.textContent = "No grid found";
 	} else if (click_counter < 2) {
@@ -196,6 +197,7 @@ run_bfs_btn.addEventListener("click", () => {
 		} else {
 			// path not found
 			error_msg.textContent = `Target is unreachable! :(`;
+			reset_required = true;
 		}
 	}
 });
