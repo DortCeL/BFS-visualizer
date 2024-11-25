@@ -88,6 +88,7 @@ create_grid_btn.addEventListener("click", () => {
 			container.appendChild(cell);
 		}
 	}
+	error_msg.textContent = "Click on nodes to add Source, Target or Walls";
 	grid_exists = true;
 });
 
