@@ -1,3 +1,6 @@
+// TODO: S ar T should be modifiable
+// TODO: User manual : hover
+
 const container = document.getElementById("container");
 const row_input = document.getElementById("row-input");
 const col_input = document.getElementById("col-input");
@@ -64,13 +67,13 @@ create_grid_btn.addEventListener("click", () => {
 					grid[i][j] = 1;
 					source[0] = i;
 					source[1] = j;
-					cell.textContent = "S";
+					// cell.textContent = "S";
 					cell.classList.add("isSource");
 				} else if (click_counter === 2 && grid[i][j] !== 1) {
 					grid[i][j] = 2;
 					target[0] = i;
 					target[1] = j;
-					cell.textContent = "T";
+					// cell.textContent = "T";
 					cell.classList.add("isTarget");
 				} else {
 					if (grid[i][j] !== 1 && grid[i][j] !== 2) {

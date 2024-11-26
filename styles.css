@@ -115,21 +115,36 @@ input {
 	font-weight: bold;
 }
 
-.cell:hover {
+/* .cell:hover {
 	background-color: rgb(212, 209, 209);
-}
+} */
 
 .isSource {
-	background: linear-gradient(rgb(55, 204, 18), rgb(56, 170, 27));
-	color: black;
+	/* background: linear-gradient(rgb(55, 204, 18), rgb(56, 170, 27)); */
+	background-color: rgb(56, 170, 27);
+	background-image: url("img/mario.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
 }
+
 .isTarget {
-	background: linear-gradient(rgb(59, 201, 24), rgb(95, 209, 67));
-	color: black;
+	/* background: linear-gradient(rgb(59, 201, 24), rgb(95, 209, 67)); */
+
+	background-color: rgb(207, 58, 150);
+	background-image: url("img/target.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
 }
 
 .isWall {
-	background: linear-gradient(rgb(141, 3, 3), rgb(185, 2, 2));
+	/* background: linear-gradient(rgb(141, 3, 3), rgb(185, 2, 2)); */
+	background-color: rgb(199, 199, 199);
+	background-image: url("img/bomb.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 
 .isVisited {
