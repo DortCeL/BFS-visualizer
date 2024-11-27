@@ -1,7 +1,5 @@
 h1 {
-	position: fixed;
-	top: 0;
-	text-align: end;
+	text-align: center;
 	font-weight: bold;
 	font-size: 20px;
 
@@ -98,11 +96,28 @@ input {
 	display: block;
 }
 
+#stop-btn {
+	padding: 6px 10px;
+	background: red;
+	color: white;
+	border-radius: 5px;
+	margin: 0px auto;
+	display: block;
+}
+#stop-btn:hover {
+	background: rgb(255, 102, 0);
+}
+p {
+	color: grey;
+	font-size: 18px;
+	text-align: center;
+}
+
 .cell {
 	width: 45px;
 	height: 45px;
-	border: 1px solid black;
-	border-radius: 10px;
+	border: 1px solid grey;
+	/* border-radius: 10px; */
 
 	cursor: pointer;
 
@@ -152,5 +167,5 @@ input {
 }
 
 .isPath {
-	background: white;
+	background: yellow;
 }
