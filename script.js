@@ -73,7 +73,7 @@ create_grid_btn.addEventListener("click", () => {
 
 			cell.addEventListener("click", () => {
 				if (reset_required) {
-					set_error_msg("Reset path before modifying");
+					set_error_msg("Reset Path to place or remove bombs");
 					return;
 				}
 
@@ -103,7 +103,9 @@ create_grid_btn.addEventListener("click", () => {
 		}
 	}
 	grid_exists = true;
-	set_error_msg("Click on cells to place Start & End positions and Bombs...");
+	set_error_msg(
+		"Click on cells to place Mario and Princess...and Bombs, if you wish..."
+	);
 });
 
 // BFS ALGORITHM
@@ -166,7 +168,7 @@ run_bfs_btn.addEventListener("click", async () => {
 
 	if (reset_required) {
 		set_error_msg(
-			"Shortest path is already shown. Reset path to run BFS again."
+			`Shortest path is already shown. "Reset path" to run BFS again.`
 		);
 		return;
 	}
@@ -175,7 +177,7 @@ run_bfs_btn.addEventListener("click", async () => {
 		return;
 	}
 	if (click_counter < 2) {
-		set_error_msg("Source & Target must be specified first");
+		set_error_msg("You need to place Mario & Princess first!");
 		return;
 	}
 
@@ -186,7 +188,7 @@ run_bfs_btn.addEventListener("click", async () => {
 		color_path();
 	} else {
 		// path not found
-		set_error_msg(`Target is unreachable! :(`);
+		set_error_msg(`Mario & Princess never met! :(`);
 		reset_required = true;
 	}
 
@@ -218,9 +220,9 @@ function color_path() {
 		}
 	}
 	set_error_msg(
-		`Target found after visiting ${steps_taken + path_length} out of ${
-			ROW * COL - 2
-		} cells, shortest path length is ${path_length}`
+		`Mario found his Princess after going through ${
+			steps_taken + path_length
+		} out of ${ROW * COL - 2} cells, shortest path length is ${path_length}`
 	);
 	reset_required = true;
 }
